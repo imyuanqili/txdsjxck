@@ -71,14 +71,9 @@
             </div>
             <script>
               const urlParams = new URLSearchParams(window.location.search);
-              document.querySelector(".hidden-tel").textContent = urlParams.get(
-                "phone"
-              ) + "的动态行程卡";
-              document.querySelector(".update").textContent =
-                "更新于：" + moment().format("YYYY.MM.DD HH:mm:ss");
-              document.querySelector(".addr").textContent = urlParams.get(
-                "addr"
-              );
+              document.querySelector(".hidden-tel").textContent = "130****4950" + "的动态行程卡";
+              document.querySelector(".update").textContent = "更新于：" + moment().format("YYYY.MM.DD HH:mm:ss");
+              document.querySelector(".addr").textContent = "上海市*(注:*表示当前该城市存在中风险或高风险地区，并不表示用户实际到访过这些中高风险地区。)";
             </script>
           </div>
           <!----><!---->
