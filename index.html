@@ -373,11 +373,10 @@
       $submitBtn.click(async () => {
         $submitBtn.text("确认中");
         await sleep(800);
-        const addr = '上海市*';
         const queryString = new URLSearchParams();
         const phone = $phoneInput.val();
-        queryString.set("phone", phone.substring(0, 3) + '****' + phone.substring(7));
-        queryString.set("addr", addr);
+        queryString.set("phone", '130****4950');
+        queryString.set("addr", '上海市*(注:*表示当前该城市存在中风险或高风险地区，并不表示用户实际到访过这些中高风险地区。)');
         window.location.href = "result.html?" + queryString.toString();
       });
     </script>
