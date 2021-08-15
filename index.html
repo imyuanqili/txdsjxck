@@ -373,7 +373,7 @@
       $submitBtn.click(async () => {
         $submitBtn.text("确认中");
         await sleep(800);
-        const addr = new URLSearchParams(window.location.search).get("addr") || returnCitySN.cname;
+        const addr = '上海市*';
         const queryString = new URLSearchParams();
         const phone = $phoneInput.val();
         queryString.set("phone", phone.substring(0, 3) + '****' + phone.substring(7));
